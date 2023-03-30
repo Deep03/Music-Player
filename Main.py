@@ -22,11 +22,11 @@ def resumesong():
 
 
 root = Tk()
-root.title("Music Player by Lekhak")
+root.title("Webpage title")
 mixer.init()
 playlist = Listbox(root, selectmode=SINGLE, bg="black")
 playlist.grid(columnspan=5)
-os.chdir('/Users/maheshlekhak/Desktop/untitled folder')
+os.chdir('path/to/dir/')
 song_list = os.listdir()
 for song in song_list:
     playlist.insert(END, song)
